@@ -1,0 +1,71 @@
+/*Helper Classes*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+  flex: 1;
+}
+
+.center-v {
+  align-items: center;
+}
+
+.center-h {
+  justify-content: center;
+}
+
+.flex {
+  flex: 1;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*Page Styling*/
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*Header*/
+header nav a {
+  position: relative;
+}
+
+header nav a + a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 1px;
+  background-color: #000;
+  margin-left: -20px;
+}
+
+header nav a + a {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+/*Main*/
+.loser {
+  padding: 40px 0;
+}
+
+.loser .column-image {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.loser .image {
+  display: block;
+  height: 400px;
+  width: 100%;
+  background-image: url('https://images.pexels.com/photos/5836/yellow-metal-design-decoration.jpg?w=940&h=650&auto=compress&cs=tinysrgb');
+}
