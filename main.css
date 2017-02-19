@@ -26,6 +26,9 @@
 }
 
 /*Page Styling*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 .image {
   background-repeat: no-repeat;
@@ -38,6 +41,7 @@
   text-decoration: none;
   border: 1px solid #000;
   padding: 8px 15px;
+  transition: all .15s ease-in-out;
 }
 
 .button:hover {
@@ -49,29 +53,32 @@
 /*Header*/
 header {
   background: #000;
-  padding-bottom: 20px;
 }
 
-header h2 {
+header h2 a {
   color: #fff;
+  text-decoration: none;
 }
 
 header nav a {
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, .5);
   padding-bottom: 5px;
+  margin-right: 20px;
   border-bottom: 2px solid;
   border-color: transparent;
+  transition: all .15s ease-in-out
 }
 
 header nav a.active {
   border-bottom: 2px solid;
   border-color: #fff;
+  color: #fff;
 }
 
 header nav a:hover {
-  border-color: #fff;
+  color: #fff;
 }
 
 header nav a + a:before {
@@ -81,13 +88,12 @@ header nav a + a:before {
   transform: translateY(-50%);
   height: 40px;
   width: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .1);
   margin-left: -20px;
 }
 
 header nav a + a {
   margin-left: 20px;
-  padding-left: 20px;
 }
 
 /*Main*/
@@ -110,27 +116,23 @@ header nav a + a {
 }
 
 /*RecentWork*/
-.recent {
-  text-align: center;
-}
-
-.features  {
+.recent  {
   padding: 40px 0;
 }
 
-.features h4 {
-  text-align: center;
-}
-
-.features .column:not(:first-child) {
+.recent .column:not(:first-child) {
   margin-left: 20px;
 }
 
-.features .column:not(:last-child) {
+.recent .column:not(:last-child) {
   margin-right: 20px;
 }
 
-.features .image {
+.recent h4 {
+  text-align: center;
+}
+
+.recent .image {
   display: block;
   height: 100px;
   width: 100%;
@@ -138,14 +140,14 @@ header nav a + a {
   border-radius: 10px;
 }
 
-/*Check out more*/
-section a.button {
-  margin-bottom: 40px;
+.recent .button {
+  margin: 20px 0;
 }
+
 /*Footer*/
 .social {
   padding: 40px;
-  background-color: #000
+  background-color: #000;
 }
 
 .social a {
