@@ -26,9 +26,6 @@
 }
 
 /*Page Styling*/
-body {
-  background: #00ffa2;
-}
 
 .image {
   background-repeat: no-repeat;
@@ -50,8 +47,31 @@ body {
 
 
 /*Header*/
+header {
+  background: #000;
+  padding-bottom: 20px;
+}
+
+header h2 {
+  color: #fff;
+}
+
 header nav a {
   position: relative;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 5px;
+  border-color: transparent;
+}
+
+header nav a.active {
+  border-bottom: 2px solid;
+  border-color: #fff;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid;
+  border-color: #fff;
 }
 
 header nav a + a:before {
@@ -61,7 +81,7 @@ header nav a + a:before {
   transform: translateY(-50%);
   height: 40px;
   width: 1px;
-  background-color: #000;
+  background-color: #fff;
   margin-left: -20px;
 }
 
@@ -116,9 +136,20 @@ header nav a + a {
   height: 100px;
   width: 100%;
   background-image: url('https://images.pexels.com/photos/300940/pexels-photo-300940.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  border-radius: 100px;
 }
 
 /*Footer*/
 .social {
-  padding-bottom: 20px;
+  padding: 40px;
+}
+
+.social a {
+  color: #000;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.social a + a {
+  margin-left: 20px;
 }
