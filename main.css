@@ -61,6 +61,7 @@ header nav a {
   text-decoration: none;
   color: #fff;
   padding-bottom: 5px;
+  border-bottom: 2px solid;
   border-color: transparent;
 }
 
@@ -70,7 +71,6 @@ header nav a.active {
 }
 
 header nav a:hover {
-  border-bottom: 2px solid;
   border-color: #fff;
 }
 
@@ -80,7 +80,7 @@ header nav a + a:before {
   top: 50%;
   transform: translateY(-50%);
   height: 40px;
-  width: 1px;
+  width: 2px;
   background-color: #fff;
   margin-left: -20px;
 }
@@ -103,10 +103,9 @@ header nav a + a {
   height: 400px;
   width: 100%;
   text-align: center;
-  background: url('https://images.pexels.com/photos/129922/pexels-photo-129922.jpeg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat;
+  background: url('https://images.pexels.com/photos/1883/black-and-white-cup-hand-mug.jpg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat;
   background-size: cover;
   background-position: center center;
-  border: black solid 3px;
   border-radius: 10px;
 }
 
@@ -135,17 +134,22 @@ header nav a + a {
   display: block;
   height: 100px;
   width: 100%;
-  background-image: url('https://images.pexels.com/photos/300940/pexels-photo-300940.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
-  border-radius: 100px;
+  background-image: url('https://images.pexels.com/photos/79290/black-and-white-code-programming-tech-79290.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+  border-radius: 10px;
 }
 
+/*Check out more*/
+section a.button {
+  margin-bottom: 40px;
+}
 /*Footer*/
 .social {
   padding: 40px;
+  background-color: #000
 }
 
 .social a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 32px;
 }
